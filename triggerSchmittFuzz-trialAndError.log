@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: D:\LTSpice\pedal-circuits\triggerSchmittFuzz-trialAndError.net
-Start Time: Wed Apr 15 14:13:16 2026
+Start Time: Wed Apr 15 16:27:49 2026
 solver = Normal
 Maximum thread count: 20
 tnom = 27
@@ -10,7 +10,7 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.705 seconds.
+Total elapsed time: 0.464 seconds.
 
 Files loaded:
 D:\LTSpice\pedal-circuits\triggerSchmittFuzz-trialAndError.net

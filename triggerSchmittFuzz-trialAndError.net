@@ -65,18 +65,18 @@ V12 0 N038 9V
 X§U7 N037 N035 N032 N038 N033 level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
 R29 N037 N036 10k
 R30 N034 0 100k
-R31 N033 N035 5.42k
+R31 N033 N035 50k
 D9 N034 N033 1N914
 D10 N033 N034 1N914
-R32 N035 0 200
-R33 N033 0 200
+R32 N035 0 2.5k
 .model D D
 .lib C:\Users\adeli\AppData\Local\LTspice\lib\cmp\standard.dio
 .model NPN NPN
 .model PNP PNP
 .lib C:\Users\adeli\AppData\Local\LTspice\lib\cmp\standard.bjt
-.tran 0.5s
+.tran 0.2s
 .inc ua741.lib
+* <- the good one mancatias
 * Library below included based on ModelFile attribute of instance X§U1, X§U3, X§U4, X§U5 (C:\Users\adeli\AppData\Local\LTspice\lib\sym\OpAmps\OP07.asy)
 .lib LTC.lib
 * Library below included based on ModelFile attribute of instance X§U2, X§U6, X§U7 (C:\Users\adeli\AppData\Local\LTspice\lib\sym\OpAmps\UniversalOpAmp2.asy)
