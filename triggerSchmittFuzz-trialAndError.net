@@ -8,40 +8,78 @@ R3 0 N002 1
 Q1 N003 N005 N006 0 2N2222
 R4 N006 0 10
 R6 N004 N003 1k
-X§U2 0 N009 N012 0 N010 LT1001 ;§pnba In+)In-)V+)V-)OUT
-VCC1 N012 0 9V
-V2 N016 0 SINE(0 1.2V 80Hz)
-R7 N010 N009 100k
+VCC1 N019 0 9V
+V2 N023 0 SINE(0 1.2V 80Hz)
+R7 N016 N015 100k
 D3 N002 N001 1N914
 D4 N001 N002 1N914
 R2 N002 N001 1k
 R10 N003 N005 100
 R9 N004 N003 1Meg
 R11 N003 0 200k
-X§U3 0 N007 N011 0 N008 LT1001 ;§pnba In+)In-)V+)V-)OUT
-VCC2 N011 0 9V
-R12 N007 N014 1K
-R13 0 N008 1
-D5 N008 N007 1N914
-D6 N007 N008 1N914
-R14 N008 N007 10k
-V4 N013 0 SINE(0 1.2V 80Hz)
-X§U4 N013 N015 N011 0 N014 LT1001 ;§pnba In+)In-)V+)V-)OUT
-R15 N014 N015 900
-R16 N015 0 100
-D1 N010 N009 1N914
-D2 N009 N010 1N914
-R8 0 N017 10k
-C2 N017 N010 100n
-C1 0 N009 12n
-R5 N009 N016 10k
+X§U3 0 N008 N018 0 N009 LT1001 ;§pnba In+)In-)V+)V-)OUT
+VCC2 N018 0 9V
+R12 N008 N021 1K
+R13 0 N009 1
+D5 N009 N008 1N914
+D6 N008 N009 1N914
+R14 N009 N008 10k
+V4 N020 0 SINE(0 1.2V 80Hz)
+X§U4 N020 N022 N018 0 N021 LT1001 ;§pnba In+)In-)V+)V-)OUT
+R15 N021 N022 900
+R16 N022 0 100
+D1 N016 N015 1N914
+D2 N015 N016 1N914
+C1 0 N015 12n
+R5 N015 N023 10k
+X§U5 N015 0 N019 0 N016 LT1001 ;§pnba In+)In-)V+)V-)OUT
+R8 0 N016 100k
+V3 N012 0 SINE(0 1.2V 80Hz)
+C2 N013 0 10n
+V5 N007 0 9V
+V6 0 N014 9V
+X§U2 N013 N010 N007 N014 N011 level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
+R17 N013 N012 10k
+R18 N010 0 10k
+R19 N017 N010 20k
+R20 0 N017 40k
+R21 N017 N011 30k
+R22 N011 0 100k
+V7 N028 0 SINE(0 1.2V 80Hz)
+C3 N029 0 10n
+V8 N024 0 9V
+V9 0 N030 9V
+X§U6 N029 N027 N024 N030 N025 level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
+R23 N029 N028 10k
+R28 N026 0 100k
+R26 N031 N027 50k
+D7 N026 N025 1N914
+D8 N025 N026 1N914
+R24 N031 0 20k
+R25 N027 0 10k
+R27 N025 N031 70k
+V10 N036 0 SINE(0 1.2V 80Hz)
+C4 N037 0 10n
+V11 N032 0 9V
+V12 0 N038 9V
+X§U7 N037 N035 N032 N038 N033 level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
+R29 N037 N036 10k
+R30 N034 0 100k
+R31 N033 N035 5.42k
+D9 N034 N033 1N914
+D10 N033 N034 1N914
+R32 N035 0 200
+R33 N033 0 200
 .model D D
 .lib C:\Users\adeli\AppData\Local\LTspice\lib\cmp\standard.dio
 .model NPN NPN
 .model PNP PNP
 .lib C:\Users\adeli\AppData\Local\LTspice\lib\cmp\standard.bjt
 .tran 0.5s
-* Library below included based on ModelFile attribute of instance X§U1, X§U2, X§U3, X§U4 (C:\Users\adeli\AppData\Local\LTspice\lib\sym\OpAmps\OP07.asy)
+.inc ua741.lib
+* Library below included based on ModelFile attribute of instance X§U1, X§U3, X§U4, X§U5 (C:\Users\adeli\AppData\Local\LTspice\lib\sym\OpAmps\OP07.asy)
 .lib LTC.lib
+* Library below included based on ModelFile attribute of instance X§U2, X§U6, X§U7 (C:\Users\adeli\AppData\Local\LTspice\lib\sym\OpAmps\UniversalOpAmp2.asy)
+.lib UniversalOpAmp2.lib
 .backanno
 .end
