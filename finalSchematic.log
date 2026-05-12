@@ -1,0 +1,16 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\LTSpice\pedal-circuits\finalSchematic.net
+Start Time: Tue May 12 11:54:44 2026
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.168 seconds.
+
+Files loaded:
+D:\LTSpice\pedal-circuits\finalSchematic.net
+C:\Users\adeli\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\adeli\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+
